@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="imgs/logo.ico" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Bootstrap Library -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- CSS Main File -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="shortcut icon" href="imgs/1486504834-cloud-clouds-cloudy-sky-cloud-computing-storage-weather_81351.ico" type="image/x-icon">
+  </head>
+  <body>
+    <nav class="py-5 position-relative">
+      <div class="container">
+        <div class="inner d-flex justify-content-between align-items-center">
+          <a
+            href="#"
+            class="text-decoration-none d-flex align-items-center text-white"
+          >
+            <img src="imgs/logo.png" alt="logo" />
+            <div class="con ms-2">
+              <h1 class="m-1">Weather</h1>
+              <p class="m-1 opacity-75">tagline goes here</p>
+            </div>
+          </a>
+          <div class="rounded-circle nav-icon d-lg-none" id="nav-icon">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </div>
+
+          <div class="links to-up" id="nav-links">
+            <ul class="list-unstyled">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Live cameras</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="search">
+      <div class="container">
+        <div class="form position-relative">
+          <input
+            type="text"
+            class="w-100 rounded-pill p-3 border-0"
+            placeholder="Find your location"
+            id="inp"
+          />
+          <button class="rounded-pill find" id="find">Find</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="weather">
+      <div class="container">
+        <div class="cards">
+          <div class="day-1">
+            <div class="title">
+              <span id="day-1">Tuesday</span>
+              <span id="date">10 Desember</span>
+            </div>
+            <div class="description">
+              <p id="city">Cairo</p>
+              <div class="temp">
+                <h1>
+                  <span id="temp-day-1">14</span>
+                  <sup>o</sup>
+                  C
+                </h1>
+                <img src="weather-imgs/113.png" alt="state" id="img-1" />
+              </div>
+              <p id="state-1">clear</p>
+              <div class="infos">
+                <div class="info rain">
+                  <img src="imgs/icon-umberella.png" alt="" />
+                  <span id="rain">20%</span>
+                </div>
+                <div class="info wind">
+                  <img src="imgs/icon-wind.png" alt="" />
+                  <span id="wind">18km/h</span>
+                </div>
+                <div class="info compass">
+                  <img src="imgs/icon-compass.png" alt="" />
+                  <span id="compass">East</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="day-2">
+            <div class="title" id="day-2">Wednesday</div>
+            <div class="description">
+              <img src="weather-imgs/113.png" alt="weather" id="img-2" />
+              <h3>
+                <span id="max-temp-day-2">14</span>
+                <sup>o</sup>
+                C
+              </h3>
+              <p>
+                <span id="min-temp-day-2">14</span>
+                <sup>o</sup>
+                C
+              </p>
+              <p id="state-2">Cloudy</p>
+            </div>
+          </div>
+          <div class="day-3">
+            <div class="title" id="day-3">Thursday</div>
+            <div class="description">
+              <img src="weather-imgs/113.png" alt="weather" id="img-3" />
+              <h3>
+                <span id="max-temp-day-3">14</span>
+                <sup>o</sup>
+                C
+              </h3>
+              <p>
+                <span id="min-temp-day-3">14</span>
+                <sup>o</sup>
+                C
+              </p>
+              <p id="state-3">Sunny</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-8">
+            <div class="inner">
+              <div class="form position-relative">
+                <input
+                  type="text"
+                  class="w-100 rounded-pill p-3 border-0"
+                  placeholder="Find your location"
+                />
+                <button class="rounded-pill find">Subscribe</button>
+              </div>
+              <p>
+                Copyright 2014 Company name. Designed by Themezy. All rights
+                reserved
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="inner">
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+
+                <div class="icon">
+                  <i class="fa-brands fa-twitch"></i>
+                </div>
+
+                <div class="icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+
+                <div class="icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Library Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JS Main File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+<!-- End  Code -->
